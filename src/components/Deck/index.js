@@ -1,6 +1,8 @@
 import React from "react";
+import { CardDeck } from "reactstrap";
 
 import Card from "../Card";
+import "./styless.css";
 
 const Deck = () => {
   const cards = ["", "", "", ""];
@@ -8,15 +10,11 @@ const Deck = () => {
   return (
     <div>
       <h1>Deck</h1>
-      <ul>
+      <CardDeck className="card-deck">
         {cards.map((card, index) => {
-          return (
-            <li key={index}>
-              <Card />
-            </li>
-          );
+          return <Card key={index} />;
         })}
-      </ul>
+      </CardDeck>
     </div>
   );
 };

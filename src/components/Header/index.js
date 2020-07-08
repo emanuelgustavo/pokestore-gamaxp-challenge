@@ -1,14 +1,15 @@
 import React from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 
-import "./style.css";
-
 const Header = () => {
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar>
         <NavbarBrand>Pokestore</NavbarBrand>
         <Nav>
+          <NavItem>
+            <NavLink>Home</NavLink>
+          </NavItem>
           <NavItem>
             <NavLink>Home</NavLink>
           </NavItem>

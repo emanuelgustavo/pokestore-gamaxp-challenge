@@ -9,11 +9,13 @@ import {
   Button
 } from "reactstrap";
 
+import "./styless.css";
+
 const ShopCard = props => {
   return (
-    <Card>
+    <Card className="card">
       <CardImg
-        width="120px"
+        className="card-image"
         src="https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-06-05-18-29/pokemon-sword-shield-new-pokemon-regional-pokedex-6017-1559755742879.jpg/EG11/thumbnail/750x422/format/jpg/quality/60"
       />
       <CardBody>
